@@ -1,0 +1,10 @@
+
+#!/bin/bash
+
+	TOPDIR="$(pwd)"
+
+	source "$TOPDIR/sources/poky/oe-init-build-env" build
+
+	ln -sf "$TOPDIR/sources/plantinux-bsp-base/conf/bblayers.conf" "$BUILDDIR/conf/bblayers.conf"
+
+	ln -sf "$TOPDIR/sources/plantinux-bsp-base/conf/local.conf" "$BUILDDIR/conf/local.conf"
